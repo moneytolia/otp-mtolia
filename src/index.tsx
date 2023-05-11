@@ -3,7 +3,7 @@ import styles from '../src/index.module.scss'
 
 interface IProps {
   inputCount: number
-  onChangedOtp: (type1: string) => string
+  onChangedOtp: Function
   inputClassName?: string
 }
 
