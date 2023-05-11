@@ -1,5 +1,5 @@
 import React, { ChangeEvent, useEffect, useRef, useState } from 'react'
-import styles from '../otp-input/otpInput.module.scss'
+import styles from '../src/index.module.scss'
 
 interface IProps {
   inputCount: number

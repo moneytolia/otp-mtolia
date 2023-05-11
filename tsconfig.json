@@ -1,11 +1,13 @@
 {
   "include": [
     "src/**/*",
-    "**/*.scss"
+    "**/*.scss",
+    "./dist/esm/index.d.ts",
+    "src/types/index.d.ts"
   ],
     "exclude": [
       "dist",
-      "node_modules"
+      "node_modules",
     ],
     "compilerOptions": {
       "module": "esnext",

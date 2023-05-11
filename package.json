@@ -1,6 +1,6 @@
 {
   "name": "otp-mtolia",
-  "version": "1.0.0",
+  "version": "1.0.6",
   "description": "",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -21,11 +21,6 @@
   "peerDependencies": {
     "react": ">=16"
   },
-  "files": [
-    "dist",
-    "LICENSE",
-    "README.md"
-  ],
   "keywords": [
     "react",
     "typescript",
