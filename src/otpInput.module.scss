@@ -1,0 +1,33 @@
+.otp {
+  width: 56px !important;
+  height: 56px;
+  flex-grow: 0;
+  border-radius: 8px;
+  border: solid 1px #d0d5dd;
+  background-color: #fff;
+  margin: 24px 8px 24px 0;
+
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  color: #353e54;
+  text-align: center;
+}
+
+.default {
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0 !important;
+  }
+
+  /* Firefox */
+  // input[type="number"] {
+  //   // -moz-appearance: textfield;
+  // }
+}
