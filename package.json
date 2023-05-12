@@ -21,7 +21,10 @@
   "peerDependencies": {
     "react": ">=16"
   },
-  "files": [ "dist", "README.md" ],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "keywords": [
     "react",
     "typescript",
@@ -48,5 +51,9 @@
     "react-dom": "^18.2.0",
     "tslib": "^2.5.0",
     "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@types/styled-components": "^5.1.26",
+    "styled-components": "^5.3.10"
   }
 }
