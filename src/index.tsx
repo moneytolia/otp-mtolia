@@ -1,5 +1,13 @@
 import React, { ChangeEvent, useEffect, useRef, useState } from 'react'
-import styles from '../src/index.module.scss'
+import styled from 'styled-components';
+
+const StyledDiv = styled.div`
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+}
+`;
 
 interface IProps {
   inputCount: number
@@ -54,7 +62,7 @@ const OtpInput = ({ inputCount, onChangedOtp, inputClassName }: IProps) => {
   }, [activeOTPIndex])
 
   return (
-    <div className={styles.default}>
+    <StyledDiv>
       {otp.map((_item, index) => {
         return (
           <React.Fragment key={index}>
@@ -62,7 +70,7 @@ const OtpInput = ({ inputCount, onChangedOtp, inputClassName }: IProps) => {
               ref={index == activeOTPIndex ? inputRef : null}
               type='number'
               inputMode='numeric'
-              className={inputClassName || styles.otp}
+              className={inputClassName}
               onChange={handleOnChange}
               onKeyDown={(e) => handleOnKeyDown(e, index)}
               value={otp[index]}
@@ -72,7 +80,7 @@ const OtpInput = ({ inputCount, onChangedOtp, inputClassName }: IProps) => {
           </React.Fragment>
         )
       })}
-    </div>
+    </StyledDiv>
   )
 }
 
