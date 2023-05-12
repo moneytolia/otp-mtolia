@@ -1,31 +1,30 @@
 {
-  "include": [
-    "src/**/*",
-    "**/*.scss",
-    "./dist/esm/index.d.ts",
-    "src/types/index.d.ts"
-  ],
-    "exclude": [
-      "dist",
-      "node_modules",
-    ],
     "compilerOptions": {
-      "module": "esnext",
-      "lib": ["dom", "esnext"],
-      "importHelpers": true,
-      "declaration": true,
-      "sourceMap": true,
-      "rootDir": "./src",
-      "outDir": "./dist/esm",
-      "strict": false,
-      "noImplicitReturns": true,
-      "noFallthroughCasesInSwitch": true,
-      "noUnusedLocals": true,
-      "noUnusedParameters": true,
-      "moduleResolution": "node",
-      "jsx": "react",
-      "esModuleInterop": true,
-      "skipLibCheck": true,
-      "forceConsistentCasingInFileNames": true,
-    }
-  }
+        "allowSyntheticDefaultImports": true,
+        "declaration": true,
+        "esModuleInterop": true,
+        "jsx": "react",
+        "lib": [
+            "es5",
+            "es2015",
+            "es2016",
+            "dom",
+            "esnext"
+        ],
+        "types": [
+            "node"
+        ],
+        "module": "es2015",
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "noUnusedLocals": true,
+        "outDir": "dist/esm",
+        "sourceMap": true,
+        "strict": true,
+        "target": "es6"
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx"
+    ]
+}

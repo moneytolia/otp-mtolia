@@ -1,7 +1,7 @@
 import React, { ChangeEvent, useEffect, useRef, useState } from 'react'
 import styled from 'styled-components'
 
-const StyledDiv = styled.div`
+export const StyledDiv = styled.div`
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
     -webkit-appearance: none !important;
@@ -9,7 +9,7 @@ const StyledDiv = styled.div`
   }
 `
 
-interface IProps {
+export interface IProps {
   inputCount: number
   onChangedOtp: (type1: string) => void
   inputClassName?: string
@@ -22,7 +22,7 @@ export const onlyNumberControl = (value: any) => {
   return value.replace(/\D/g, '')
 }
 
-const OtpInput = ({ inputCount, onChangedOtp, inputClassName }: IProps) => {
+export const OtpInput = ({ inputCount, onChangedOtp, inputClassName }: IProps) => {
   const [otp, setOtp] = useState<string[]>(new Array(inputCount).fill(''))
   const [activeOTPIndex, setActiveOTPIndex] = useState<number>(0)
   const inputRef = useRef<HTMLInputElement>(null)
@@ -84,4 +84,4 @@ const OtpInput = ({ inputCount, onChangedOtp, inputClassName }: IProps) => {
   )
 }
 
-export default OtpInput
+export default OtpInput;
