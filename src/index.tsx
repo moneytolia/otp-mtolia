@@ -1,13 +1,13 @@
 import React, { ChangeEvent, useEffect, useRef, useState } from 'react'
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const StyledDiv = styled.div`
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none !important;
-  margin: 0 !important;
-}
-`;
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0 !important;
+  }
+`
 
 interface IProps {
   inputCount: number
