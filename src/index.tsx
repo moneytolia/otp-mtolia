@@ -23,9 +23,9 @@ export const onlyNumberControl = (value: any) => {
 }
 
 export const OtpInput = ({ inputCount, onChangedOtp, inputClassName }: IProps) => {
-  const [otp, setOtp] = useState<string[]>(new Array(inputCount).fill(''))
-  const [activeOTPIndex, setActiveOTPIndex] = useState<number>(0)
-  const inputRef = useRef<HTMLInputElement>(null)
+  const [otp, setOtp] = useState<string[]>(new Array(inputCount).fill(""));
+  const [activeOTPIndex, setActiveOTPIndex] = useState<number>(0);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const handleOnChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
     const { value } = target;
@@ -52,39 +52,40 @@ export const OtpInput = ({ inputCount, onChangedOtp, inputClassName }: IProps) =
     onChangedOtp(newOTP.join(''));
   };
 
-  const handleOnKeyDown = ({ key }: React.KeyboardEvent<HTMLInputElement>, index: number) => {
-    currentOTPIndex = index
+  const handleOnKeyDown = (event: any, index: number) => {
+    currentOTPIndex = index;
     setTimeout(() => {
-      if (key === backSpace) setActiveOTPIndex(currentOTPIndex - 1)
-    }, 10)
-  }
+      if (event.key === backSpace) setActiveOTPIndex(currentOTPIndex - 1);
+    }, 10);
+  };
+  
 
   useEffect(() => {
-    inputRef.current?.focus()
-  }, [activeOTPIndex])
+    inputRef.current?.focus();
+  }, [activeOTPIndex]);
 
   return (
     <StyledDiv>
-      {otp.map((_item, index) => {
+      {otp.map((_, index) => {
         return (
           <React.Fragment key={index}>
             <input
               ref={index == activeOTPIndex ? inputRef : null}
-              type='text'
-              inputMode='numeric'
+              type="text"
+              inputMode="numeric"
               className={inputClassName}
               onChange={handleOnChange}
               onKeyDown={(e) => handleOnKeyDown(e, index)}
               value={otp[index]}
-              autoComplete='one-time-code'
+              autoComplete="one-time-code"
               onInput={handleOnChange}
             />
             {index === otp.length - 1 ? null : <span />}
           </React.Fragment>
-        )
+        );
       })}
-    </StyledDiv>
-  )
-}
+   </StyledDiv>
+  );
+};
 
 export default OtpInput;
