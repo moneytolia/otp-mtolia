@@ -66,7 +66,7 @@ export const OtpInput = ({ inputCount, onChangedOtp, inputClassName }: IProps) =
 
   return (
     <StyledDiv>
-      {otp.map((_, index) => {
+      {otp.map((_item, index) => {
         return (
           <React.Fragment key={index}>
             <input
