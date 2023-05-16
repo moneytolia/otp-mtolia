@@ -1,7 +1,7 @@
 {
   "name": "otp-mtolia",
-  "version": "1.0.15-4",
-  "description": "",
+  "version": "1.0.16",
+  "description": "One Time Password Library by Moneytolia",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "scripts": {
@@ -20,7 +20,9 @@
   "keywords": [
     "react",
     "typescript",
-    "awesome-project"
+    "otp-input",
+    "otp",
+    "one-time-password"
   ],
   "author": "Moneytolia",
   "license": "MIT",

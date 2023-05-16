@@ -28,27 +28,29 @@ export const OtpInput = ({ inputCount, onChangedOtp, inputClassName }: IProps) =
   const inputRef = useRef<HTMLInputElement>(null)
 
   const handleOnChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
-    const { value } = target
-    const newOTP: string[] = [...otp]
+    const { value } = target;
+    const numberValue = onlyNumberControl(value);
+    const newOTP: string[] = [...otp];
 
-    if (value.length > 2) {
-      const maxIndex = inputCount - 1
-      const valueArr = onlyNumberControl(value).split('')
+    if (numberValue.length > 2) {
+      const maxIndex = inputCount - 1;
+      const valueArr = numberValue.split("");
+
       valueArr.forEach((val: string, index: number) => {
         if (index <= maxIndex) {
-          newOTP[index] = val
+          newOTP[index] = val;
         }
-      })
-      currentOTPIndex = valueArr.length >= maxIndex ? inputCount : valueArr.length
-      setActiveOTPIndex(currentOTPIndex - 1)
+      });
+      currentOTPIndex = valueArr.length >= maxIndex ? inputCount : valueArr.length;
+      setActiveOTPIndex(currentOTPIndex - 1);
     } else {
-      newOTP[currentOTPIndex] = value.substring(value.length - 1)
-      if (!value) setActiveOTPIndex(currentOTPIndex - 1)
-      else setActiveOTPIndex(currentOTPIndex + 1)
+      newOTP[currentOTPIndex] = numberValue.substring(numberValue.length - 1);
+      if (!numberValue) setActiveOTPIndex(currentOTPIndex - 1);
+      else setActiveOTPIndex(currentOTPIndex + 1);
     }
-    setOtp(newOTP)
-    onChangedOtp(newOTP.join(''))
-  }
+    setOtp(newOTP);
+    onChangedOtp(newOTP.join(''));
+  };
 
   const handleOnKeyDown = ({ key }: React.KeyboardEvent<HTMLInputElement>, index: number) => {
     currentOTPIndex = index
@@ -68,13 +70,14 @@ export const OtpInput = ({ inputCount, onChangedOtp, inputClassName }: IProps) =
           <React.Fragment key={index}>
             <input
               ref={index == activeOTPIndex ? inputRef : null}
-              type='number'
+              type='text'
               inputMode='numeric'
               className={inputClassName}
               onChange={handleOnChange}
               onKeyDown={(e) => handleOnKeyDown(e, index)}
               value={otp[index]}
               autoComplete='one-time-code'
+              onInput={handleOnChange}
             />
             {index === otp.length - 1 ? null : <span />}
           </React.Fragment>
