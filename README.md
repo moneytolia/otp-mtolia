@@ -20,6 +20,9 @@
     <br> 
 </p>
 
+<video id="otp" controls autoplay loop class="video-js vjs-default-skin" width="1340" height="264" src="./otp-recording.mov" type='video/mov' />
+</video>
+
 ## 📝 Table of Contents
 
 - [About](#about)
