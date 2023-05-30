@@ -1,6 +1,6 @@
 {
   "name": "otp-mtolia",
-  "version": "1.0.19-1",
+  "version": "1.0.20",
   "description": "One Time Password Library by Moneytolia",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",

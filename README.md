@@ -8,7 +8,7 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
+[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/gizemay96/otp/issues)
 [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
@@ -104,22 +104,14 @@ Add notes about how to use the system.
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
-- [ReactJs](https://www.mongodb.com/) - Framework
+- [ReactJs](https://react.dev/) - Framework
 - [styled-components](https://www.npmjs.com/package/styled-components) - Styling
-- [TypeScript](https://www.mongodb.com/)
+- [TypeScript](https://www.npmjs.com/package/typescript)
 
 ## ✍️ Authors <a name = "authors"></a>
 
 - [@moneytolia](https://github.com/kylelobo) - Idea & Initial work
-- [@ercancan](https://github.com/kylelobo) - Developer
-- [@gizemay](https://github.com/kylelobo) - Developer
+- [@ercancan](https://github.com/lErcanl) - Developer
+- [@gizemay](https://github.com/gizemay96) - Developer
 - [@suayipdemirci](https://github.com/kylelobo) - Developer
 - [@baranörek](https://github.com/kylelobo) - Developer
-
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
-
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
