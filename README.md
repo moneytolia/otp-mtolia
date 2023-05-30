@@ -65,6 +65,53 @@ End with an example of getting some data out of the system or using it for a lit
 
 ## 🎈 Usage <a name="usage"></a>
 
+```
+import OtpInput from "otp-mtolia";
+import React from "react";
+import { Controller, SubmitHandler, useForm } from "react-hook-form";
+import styles from "../otp/otp.module.scss";
+
+interface otpForm {
+  otp: any;
+}
+
+export const OtpScreen = () => {
+
+  //#region Form & Submit
+  const {
+    handleSubmit,
+    formState: { errors, isSubmitted, isValid },
+    setValue,
+  } = useForm<otpForm>({});
+
+  const onSubmit: SubmitHandler<otpForm> = (data) => {
+    console.log(data);
+  };
+
+  //#endregion
+
+  //#region JSX
+  return (
+    <div className={styles.otpScreen}>
+
+      <h4>OTP Page</h4>
+
+      <form onSubmit={handleSubmit(onSubmit)}>
+
+        {/* OTP From Package*/}
+        <OtpInput inputCount={6} onChangedOtp={(value: string) => setValue('otp', value)} inputClassName={styles.otpInput} />
+
+        <button type="submit">  Submit </button>
+      </form>
+      
+    </div>
+  );
+  //#endregion
+};
+
+```
+
+
 <table>
 <tr>
 <th></th>
@@ -100,8 +147,6 @@ End with an example of getting some data out of the system or using it for a lit
 
 </table>
 
-Add notes about how to use the system.
-
 ## ⛏️ Built Using <a name = "built_using"></a>
 
 - [ReactJs](https://react.dev/) - Framework
@@ -110,7 +155,7 @@ Add notes about how to use the system.
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@moneytolia](https://github.com/kylelobo) - Idea & Initial work
+- [@moneytolia](https://github.com/moneytolia) - Idea & Initial work
 - [@ercancan](https://github.com/lErcanl) - Developer
 - [@gizemay](https://github.com/gizemay96) - Developer
 - [@suayipdemirci](https://github.com/kylelobo) - Developer
