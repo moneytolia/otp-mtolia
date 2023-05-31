@@ -77,7 +77,7 @@ npm i otp-mtolia
 ## 🎈 Usage <a name="usage"></a>
 
 ### With React Hook Form
-```
+```javascript
 import OtpInput from "otp-mtolia";
 import React from "react";
 import { Controller, SubmitHandler, useForm } from "react-hook-form";
