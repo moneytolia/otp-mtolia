@@ -48,7 +48,7 @@ With this library, you can get a ready input where you can get your one-time pas
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+This package is made for reactjs. First, review the Prerequisites section below. And if there is a missing package in your project, install it.
 
 ### Prerequisites
 
@@ -64,15 +64,12 @@ npm i typescript
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running.
+Firstly, add the npm package to your project by typing the following line into the terminal.
 
-Say what the step will be
 
 ```
 npm i otp-mtolia
 ```
-
-End with an example of getting some data out of the system or using it for a little demo.
 
 
 ## 🎈 Usage <a name="usage"></a>
