@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="./brand.png" alt="Project logo"></a>
+ <img width=200px height=200px src="./brand.png" alt="moneytolia-logo"></a>
 </p>
 
 <h3 align="center">otp-mtolia</h3>
@@ -8,8 +8,8 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/gizemay96/otp.svg)](https://github.com/gizemay96/otp/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/gizemay96/otp.svg)](https://github.com/gizemay96/otp/pulls)
+[![GitHub Issues](https://img.shields.io/github/issues/moneytolia/otp-mtolia.svg)](https://github.com/moneytolia/otp-mtolia/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/moneytolia/otp-mtolia.svg)](https://github.com/moneytolia/otp-mtolia/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
@@ -24,7 +24,7 @@
 <p align="center"> Intro </p>
 
 <p align="center">
-  <img src="./otp.gif" alt="Gif Başlığı">
+  <img src="./otp.gif" alt="otp-gif">
 </p>
 
 <br>
