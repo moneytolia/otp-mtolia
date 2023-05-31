@@ -8,20 +8,21 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/gizemay96/otp/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
+[![GitHub Issues](https://img.shields.io/github/issues/gizemay96/otp.svg)](https://github.com/gizemay96/otp/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/gizemay96/otp.svg)](https://github.com/gizemay96/otp/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
 
 ---
 
-<p align="center"> Few lines describing your project.
-    <br> 
+<p align="center"> Intro </p>
+
+<p align="center">
+  <img src="./otp.gif" alt="Gif Başlığı">
 </p>
 
-<video id="otp" controls autoplay loop class="video-js vjs-default-skin" width="1340" height="264" src="./otp-recording.mov" type='video/mov' />
-</video>
+
 
 ## 📝 Table of Contents
 
