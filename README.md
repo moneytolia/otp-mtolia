@@ -79,7 +79,7 @@ npm i @moneytolia/otp-mtolia
 
 ### With React Hook Form
 ```javascript
-import OtpInput from "otp-mtolia";
+import OtpInput from '@moneytolia/otp-mtolia';
 import React from "react";
 import { Controller, SubmitHandler, useForm } from "react-hook-form";
 import styles from "../otp/otp.module.scss";
