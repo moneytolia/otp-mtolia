@@ -14,6 +14,8 @@
 
 </div>
 
+<h1> <a style="color: #ff4308" target="_blank" href="https://stackblitz.com/edit/stackblitz-starters-vzx3e7?description=React%20%20%20TypeScript%20starter%20project&file=src%2FApp.tsx,src%2Fstyle.css,src%2Findex.tsx&title=React%20Starter" >Demo (Stackblitz) </a> </h1>
+
 ---
 
 <br>
@@ -30,13 +32,13 @@
 
 ## 📝 Table of Contents
 
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Usage](#usage)
-- [Built Using](#built_using)
-- [Contributing](../CONTRIBUTING.md)
-- [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
+- [<span style="color:#ff4308">About</span>](#about)
+- [<span style="color:#ff4308">Getting Started</span>](#getting_started)
+- [<span style="color:#ff4308">Usage</span>](#usage)
+- [<span style="color:#ff4308">Built Using</span>](#built_using)
+- [<span style="color:#ff4308">Contributing</span>](../CONTRIBUTING.md)
+- [<span style="color:#ff4308">Authors</span>](#authors)
+- [<span style="color:#ff4308">Acknowledgments</span>](#acknowledgement)
 
 <br>
 
@@ -74,6 +76,7 @@ npm i otp-mtolia
 
 ## 🎈 Usage <a name="usage"></a>
 
+### With React Hook Form
 ```
 import OtpInput from "otp-mtolia";
 import React from "react";
@@ -165,14 +168,14 @@ export const OtpScreen = () => {
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
-- [ReactJs](https://react.dev/) - Framework
-- [styled-components](https://www.npmjs.com/package/styled-components) - Styling
-- [TypeScript](https://www.npmjs.com/package/typescript)
+- [<span style="color:#ff4308">ReactJS</span>](https://react.dev/) - Framework
+- [<span style="color:#ff4308">styled-components</span>](https://www.npmjs.com/package/styled-components) - Styling
+- [<span style="color:#ff4308">TypeScript</span>](https://www.npmjs.com/package/typescript)
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@moneytolia](https://github.com/moneytolia) - Idea & Initial work
-- [@ercancan](https://github.com/lErcanl) - Developer
-- [@gizemay](https://github.com/gizemay96) - Developer
-- [@suayipdemirci](https://github.com/kylelobo) - Developer
-- [@baranörek](https://github.com/kylelobo) - Developer
+- [<span style="color:#ff4308">@moneytolia</span>](https://github.com/moneytolia) - Idea & Initial work
+- [<span style="color:#ff4308">@ercancan</span>](https://github.com/lErcanl) - Developer
+- [<span style="color:#ff4308">gizemay</span>](https://github.com/gizemay96) - Developer
+- [<span style="color:#ff4308">suayipdemirci</span>](https://github.com/kylelobo) - Developer
+- [<span style="color:#ff4308">baranörek</span>](https://github.com/kylelobo) - Developer
