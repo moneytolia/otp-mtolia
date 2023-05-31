@@ -176,6 +176,6 @@ export const OtpScreen = () => {
 
 - [<span style="color:#ff4308">@moneytolia</span>](https://github.com/moneytolia) - Idea & Initial work
 - [<span style="color:#ff4308">@ercancan</span>](https://github.com/lErcanl) - Developer
-- [<span style="color:#ff4308">gizemay</span>](https://github.com/gizemay96) - Developer
-- [<span style="color:#ff4308">suayipdemirci</span>](https://github.com/kylelobo) - Developer
-- [<span style="color:#ff4308">baranörek</span>](https://github.com/kylelobo) - Developer
+- [<span style="color:#ff4308">@gizemay</span>](https://github.com/gizemay96) - Developer
+- [<span style="color:#ff4308">@suayipdemirci</span>](https://github.com/kylelobo) - Developer
+- [<span style="color:#ff4308">@baranörek</span>](https://github.com/kylelobo) - Developer
