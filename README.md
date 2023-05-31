@@ -16,13 +16,17 @@
 
 ---
 
+<br>
+<br>
+
 <p align="center"> Intro </p>
 
 <p align="center">
   <img src="./otp.gif" alt="Gif Başlığı">
 </p>
 
-
+<br>
+<br>
 
 ## 📝 Table of Contents
 
@@ -34,9 +38,13 @@
 - [Authors](#authors)
 - [Acknowledgments](#acknowledgement)
 
+<br>
+
 ## 🧐 About <a name = "about"></a>
 
 With this library, you can get a ready input where you can get your one-time passwords from the user and style it. The user can fill in the input with a single button on the clipboard on mobile devices.
+
+<br>
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
@@ -114,7 +122,10 @@ export const OtpScreen = () => {
 };
 
 ```
-
+<br>
+<br>
+<br>
+<br>
 
 <table>
 <tr>
@@ -150,6 +161,10 @@ export const OtpScreen = () => {
 </tr>
 
 </table>
+
+<br>
+<br>
+<br>
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
