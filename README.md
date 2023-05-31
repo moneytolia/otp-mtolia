@@ -44,7 +44,8 @@
 
 ## 🧐 About <a name = "about"></a>
 
-With this library, you can get a ready input where you can get your one-time passwords from the user and style it. The user can fill in the input with a single button on the clipboard on mobile devices.
+With this library, you can get a ready input where you can get your one-time passwords from the user and style it.  <br><br>
+The user can fill in the input with a single button on the clipboard on ios devices.
 
 <br>
 
@@ -177,5 +178,5 @@ export const OtpScreen = () => {
 - [<span style="color:#ff4308">@moneytolia</span>](https://github.com/moneytolia) - Idea & Initial work
 - [<span style="color:#ff4308">@ercancan</span>](https://github.com/lErcanl) - Developer
 - [<span style="color:#ff4308">@gizemay</span>](https://github.com/gizemay96) - Developer
-- [<span style="color:#ff4308">@suayipdemirci</span>](https://github.com/kylelobo) - Developer
-- [<span style="color:#ff4308">@baranörek</span>](https://github.com/kylelobo) - Developer
+- [<span style="color:#ff4308">@suayipdemirci</span>](https://github.com/sypdmrc) - Developer
+- [<span style="color:#ff4308">@baranörek</span>](https://github.com/BaranOrek) - Developer
