@@ -71,7 +71,7 @@ Firstly, add the npm package to your project by typing the following line into t
 
 
 ```
-npm i otp-mtolia
+npm i @moneytolia/otp-mtolia
 ```
 
 
