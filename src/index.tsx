@@ -1,28 +1,29 @@
-import React, { ChangeEvent, useEffect, useRef, useState } from 'react'
-import styled from 'styled-components'
+import React, { ChangeEvent, useEffect, useRef, useState } from "react";
+import styled from "styled-components";
 
-export const StyledDiv = styled.div`
+export const StyledDiv = styled.div<{ className?: string }>`
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
     -webkit-appearance: none !important;
     margin: 0 !important;
   }
-`
+`;
 
 export interface IProps {
-  inputCount: number
-  onChangedOtp: (type1: string) => void
-  inputClassName?: string
+  inputCount: number;
+  onChangedOtp: (type1: string) => void;
+  inputClassName?: string;
+  containerClassName?: string;
 }
 
-let currentOTPIndex = 0
-const backSpace = 'Backspace'
+let currentOTPIndex = 0;
+const backSpace = "Backspace";
 
 export const onlyNumberControl = (value: any) => {
-  return value.replace(/\D/g, '')
-}
+  return value.replace(/\D/g, "");
+};
 
-export const OtpInput = ({ inputCount, onChangedOtp, inputClassName }: IProps) => {
+export const OtpInput = ({ inputCount, onChangedOtp, inputClassName, containerClassName }: IProps) => {
   const [otp, setOtp] = useState<string[]>(new Array(inputCount).fill(""));
   const [activeOTPIndex, setActiveOTPIndex] = useState<number>(0);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -49,7 +50,7 @@ export const OtpInput = ({ inputCount, onChangedOtp, inputClassName }: IProps) =
       else setActiveOTPIndex(currentOTPIndex + 1);
     }
     setOtp(newOTP);
-    onChangedOtp(newOTP.join(''));
+    onChangedOtp(newOTP.join(""));
   };
 
   const handleOnKeyDown = (event: any, index: number) => {
@@ -58,14 +59,13 @@ export const OtpInput = ({ inputCount, onChangedOtp, inputClassName }: IProps) =
       if (event.key === backSpace) setActiveOTPIndex(currentOTPIndex - 1);
     }, 10);
   };
-  
 
   useEffect(() => {
     inputRef.current?.focus();
   }, [activeOTPIndex]);
 
   return (
-    <StyledDiv>
+    <StyledDiv className={containerClassName}>
       {otp.map((_item, index) => {
         return (
           <React.Fragment key={index}>
@@ -84,7 +84,7 @@ export const OtpInput = ({ inputCount, onChangedOtp, inputClassName }: IProps) =
           </React.Fragment>
         );
       })}
-   </StyledDiv>
+    </StyledDiv>
   );
 };
 
